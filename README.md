@@ -9,13 +9,13 @@ This Flutter application displays the top posts from Hacker News using the BLoC 
 1. **Clone the Repository**
 
     ```bash
-    git clone https://github.com/yourusername/hacker-news-app.git
+    https://github.com/CoderartStudioprod/siyatech_assig_app.git
     ```
 
 2. **Navigate to the Project Directory**
 
     ```bash
-    cd hacker-news-app
+    cd siyatech_assig_app
     ```
 
 3. **Install Dependencies**
