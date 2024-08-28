@@ -52,4 +52,4 @@ This Flutter application displays the top posts from Hacker News using the BLoC 
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details 🦁.
