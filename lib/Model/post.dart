@@ -33,7 +33,7 @@ class Post {
       type: json['type'],
       kids: List<int>.from(json['kids'] ?? []),
       score: json['score'] ?? 0,
-      url: json['url']??"",
+      url: json['url'] ?? "",
     );
   }
 }

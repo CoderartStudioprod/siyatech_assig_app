@@ -24,15 +24,14 @@ class PostScreen extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.notifications_none, color: Colors.black),
             onPressed: () {
-
               // Handle notifications
             },
           ),
         ],
-
       ),
       body: BlocProvider(
-        create: (context) => PostBloc(repository: HackerNewsRepository())..add(PostLoadRequested()),
+        create: (context) => PostBloc(repository: HackerNewsRepository())
+          ..add(PostLoadRequested()),
         child: PostList(),
       ),
     );
@@ -58,10 +57,10 @@ class PostList extends StatelessWidget {
               final post = posts[index];
               return NewsItem(
                 title: post.title,
-                  author: post.by,
-                  category: post.type,
-                  commentlistID:post.kids,
-                  time:post.time,
+                author: post.by,
+                category: post.type,
+                commentlistID: post.kids,
+                time: post.time,
                 urllaunch: () => Constant().launchURL(post.url),
               );
             },
@@ -69,7 +68,8 @@ class PostList extends StatelessWidget {
         } else if (state is PostLoadFailure) {
           return Center(child: Text('Failed to load posts: ${state.error}'));
         } else {
-          return Center(child: Column(
+          return Center(
+              child: Column(
             children: [
               CircularProgressIndicator(),
               Text('Loading Data'),
@@ -79,8 +79,4 @@ class PostList extends StatelessWidget {
       },
     );
   }
-
-
-
-
 }
